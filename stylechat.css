@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 6, 6);
+
+}
+h1,h2,h3{
+    font-family: 'Meie Script', cursive;
+}
+
+p{
+    font-family: 'Farsan', cursive;  
+}
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+svg {
+    width: auto;
+    height: 100vh;
+}
+
+#yeux {
+    animation: yeux 2s ease infinite alternate;
+}
+
+@keyframes yeux {
+    from {
+        fill: #EFC90C;
+    }
+
+    to {
+        fill: rgb(143, 10, 10);
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color:#e8edf6;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 
+      10px 10px 16px 0 #00000c inset,
+      -10px -10px 16px 0 #00000c inset;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    margin: 20px;
+}
+
+h3 {
+    
+    font-size: 3em;
+    margin: 30px;
+}
+
+p {
+    text-align: justify;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.picto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+i{
+    font-size: 50px;
+    color:black;
+}
+
+
+/*mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries*/
+
+
+@media screen and (max-width:1024px){
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: autovh;
+        background-color:#e8edf6;
+        border-radius: 10px;
+        margin-right: 30px;
+        box-shadow: 
+          10px 10px 16px 0 #00000c inset,
+          -10px -10px 16px 0 #00000c inset;
+    }
+
+    h3 {
+        
+        font-size: 2em;
+        margin: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:414px){
+
+
+svg{
+    display: none;
+}
+
+.box {
+    margin: 0;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+}
+
+}
