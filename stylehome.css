@@ -400,11 +400,13 @@ p,a{
 .adresseethoraires {
     display: flex;
     flex-direction: column;
-    background-color: #d0d5de;
+    background-image: url(ressources/images/IMG_20200116_130712.png);
     padding: 30px;
     width: 800px;
     height: 500px;
     border-radius: 10px;
+
+  
 
 }
 

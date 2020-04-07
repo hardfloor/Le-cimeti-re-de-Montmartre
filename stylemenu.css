@@ -143,7 +143,7 @@ a:hover:before,
 a:hover:after,
 a:hover span:before,
 a:hover span:after {
-    width: calc(230px/2);
+    width: calc(290px/2);
     height: calc(40px/2);
 }
 
