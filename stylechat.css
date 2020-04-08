@@ -75,6 +75,9 @@ p {
     margin: 25px;
 }
 
+.box span{
+    margin-left: 30px;
+}
 .picto{
     width: 100%;
     display: flex;

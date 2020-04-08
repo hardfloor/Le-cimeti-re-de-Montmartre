@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="ressources/logo/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="ressources/codes/lightbox.css" rel="stylesheet" />
 </head>
 
@@ -25,7 +27,7 @@
                 <div class="pano">
                     <img src="ressources/images/Panorama-sans-titre1.png" alt="panoramique du cimetière de Montmarte">
                 </div>
-                <div class="photomobil">
+                <div class="picmobil">
                     <img src="ressources/images/accueilmobil.png">
                 </div>
                 <div class="pictologo">
@@ -42,7 +44,7 @@
                                     <path id="Vector"
                                         d="M378.75 490.01C371.63 488.31 364.32 487.14 357.41 484.82C322.09 472.96 297.22 438.98 297.1 401.74C296.86 332.63 296.79 263.51 297.11 194.39C297.33 146.25 337.34 106.55 385.51 106.07C409.5 105.83 433.5 105.83 457.5 106.07C505.68 106.55 545.66 146.2 545.89 194.39C546.23 263.5 546.21 332.62 545.89 401.74C545.68 446.29 510.99 484.21 466.72 489.33C465.88 489.43 465.08 489.78 464.26 490.01C435.75 490.01 407.25 490.01 378.75 490.01ZM516 297.98C516 264.24 516.04 230.51 515.99 196.77C515.93 162.44 489.5 136.08 455.12 136.01C432.63 135.97 410.14 135.96 387.65 136.01C353.52 136.09 327.05 162.51 327.02 196.62C326.97 264.22 326.96 331.82 327.02 399.41C327.05 433.49 353.55 459.9 387.69 459.99C410.31 460.05 432.92 460.06 455.54 459.95C459.63 459.93 463.8 459.57 467.8 458.73C496.34 452.78 515.93 428.71 515.99 399.55C516.06 365.71 516 331.84 516 297.98Z"
                                         fill="#F9F9F9" />
-                                    <g id="fleche">
+                                    <g id="arrow">
                                         <path id="Vector_2"
                                             d="M353.8 190.46C361.18 183.48 368.24 176.79 375.57 169.85C390.67 185.8 405.67 201.64 421.04 217.88C436.16 201.83 451.11 185.97 466.26 169.89C473.54 176.74 480.69 183.46 488.1 190.41C465.73 214.19 443.57 237.74 421.12 261.6C398.72 237.94 376.42 214.37 353.8 190.46Z"
                                             fill="#FBFBFB" />
@@ -60,75 +62,84 @@
         
         </div>
         <!-- histoire du cimetière histoire du cimetière histoire du cimetière histoire du cimetière histoire du cimetière  histoire du cimetière histoire du cimetière histoire du cimetière histoire du cimetière  -->
-            <div class="doubleexpo" id="hist1">
+            <div class="double_expo" id="hist1">
                 <img src="ressources/images/arbrenegatif.png" alt="un arbre en négatif">
                 <video autoplay muted loop src="ressources/video/Video Of Snowfall.mp4"></video>
 
-                <div class="box">.
+                <div class="history">.
                     <h2>Une histoire mouvementée</h2>
-                        <p>Le cimetière du Nord, plus communément appelé le cimetière de Montmartre, a ouvert ses portes
+                        <p><span></span>Le cimetière du Nord, plus communément appelé le cimetière de Montmartre, a ouvert ses portes
                         officiellement le 1er janvier 1825. Il accueille aujourd’hui plus de 22 000 concessions,
-                        notamment les dernires demeures de personnalités ayant marqué l’histoire de France, de
-                        Montmartre et parfois même plusC’est la surpopulation du cimetière qui a provoqué l’éboulement,
+                        notamment les dernières demeures de personnalités ayant marqué l’histoire de France, de
+                        Montmartre et parfois même plus. Surpeuplé, le cimetière s'est écroulé dans les cavité rocheuses sous-jaçantes,
                         provoquant un émoi certain chez les parisiens ! Il faut bien s’imaginer que Paris à cette
                         époque-là ne ressemble pas à notre Paris, Haussmann n’est pas encore passé par là et Paris est
-                        encore très médiéval dans son urbanisme Quant aux abords du cimetière des Innocents, on y
+                        encore très médiéval dans son urbanisme. Quant aux abords du cimetière des Innocents, on y
                         croise les fiacres et les domestiques venus faire le marché, des chevaux, beaucoup de boue, sans
-                        oublier les riverains et la nourriture en fin de marché aux Halles ! Si l’on ajoute à cela un
-                        éboulement fort regrettable de corps plus ou moins décomposés, on conclut assez facilement que
-                        l’état sanitaire du quartier était loin d’être irréprochable.C’est la surpopulation du cimetière
-                        qui a provoqué l’éboulement, provoquant un émoi certain chez les parisiens ! Il faut bien
-                        s’imaginer que Paris à cette époque-là ne ressemble pas à notre Paris, Haussmann n’est pas
-                        encore passé par là et Paris est encore très médiéval dans son urbanisme Quant aux abords du
-                        cimetière des Innocents, on y croise les fiacres et les domestiques venus faire le marché, des
-                        chevaux, beaucoup de boue, sans oublier les riverains et la nourriture en fin de marché aux
-                        Halles ! Si l’on ajoute à cela un éboulement fort regrettable de corps plus ou moins décomposés,
-                        on conclut assez facilement que l’état sanitaire du quartier était loin d’être irréprochable.
+                        oublier les riverains et la nourriture en fin de marché aux Halles ! On ajoute à cela que
+                         l’état sanitaire du quartier était loin d’être irréprochable...
                         </p>
-                        <div class="boutonhistoire">
-                            <a class="ensavoirplus" href="histoire.html"><h3>En savoir plus</h3></a>
-                            <a class="boutonchat" href="chat.html"><h3>Histoire insolite</h3></a>
+                        <div class="story_button">
+                            <a class="more_story" href="histoire.html"><h3>En savoir plus</h3></a>
+                            <a class="cat" href="chat.html"><h3>Histoire insolite</h3></a>
                         </div>
                 </div>
             </div>
                             
-                            <!-- Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetièrePhotos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière -->
-            <div class="container">
-                    <div class="box a"><a href="ressources/images/DSC05395.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05395.png" alt="image-1"></a></div>
-                    <div class="box b"><a href="ressources/images/DSC05396.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05396.png" alt="image-2"></a></div>
-                    <div class="box c"><a href="ressources/images/DSC05397.png" data-lightbox="n" data-title="Contreforts de l'Atlas"><img src="ressources/images/DSC05400.png" alt="image-3"></a></div>
-                    <div class="box d"><a href="ressources/images/DSC05399.png" data-lightbox="n" data-title="Le long des remparts de Taroudant"><img src="ressources/images/DSC05399.png" alt="image-4"></a></div>
-                    <div class="box e"><a href="ressources/images/DSC05400.png" data-lightbox="n" data-title="Fête foraine à Taroudant"><img src="ressources/images/DSC05400.png" alt="image-5"></a></div>
-                    <div class="box f"><a href="ressources/images/DSC05401.png" data-lightbox="n" data-title=" Village abandonné dans les montagnes de Tafraoute"><img src="ressources/images/DSC05401.png" alt="image-6"></a></div>
-                    <div class="box g"><a href="ressources/images/DSC05402.png" data-lightbox="n" data-title="Mosquée de Tafraout"><img src="ressources/images/DSC05402.png" alt="image-7"></a></div>
-                    <div class="box h"><a href="ressources/images/DSC05403.png" data-lightbox="n" data-title="Rocher de Tafraout"><img src="ressources/images/DSC05403.png" alt="image-8"></a></div>
-                    <div class="box i"><a href="ressources/images/DSC05404.png" data-lightbox="n" data-title="Cactus dans les ruines d'un village de montagne"><img src="ressources/images/DSC05404.png" alt="image-9"></a></div>
-                    <div class="box j"><a href="ressources/images/DSC05408.png" data-lightbox="n" data-title="Un matin sur les contreforts de l'Atelas"><img src="ressources/images/DSC05408.png" alt="image-10"></a></div>
-                    <div class="box k"><a href="ressources/images/DSC05426.png" data-lightbox="n" data-title="Village en ruine"><img src="ressources/images/DSC05426.png" alt="image-11"></a></div>
-                    <div class="box l"><a href="ressources/images/DSC05427.png" data-lightbox="n" data-title="Un chameau sur la plage de Tiznit"><img src="ressources/images/DSC05427.png" alt="image-12"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05428.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05428.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05433.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05433.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05434.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05434.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05435.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05435.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05436.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05436.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05443.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05443.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05447.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05447.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05451.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05451.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05452.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05456.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05456.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05456.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05458.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05458.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05459.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05459.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05460.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05460.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05463.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05463.png" alt="image-13"></a></div>
-                    <div class="box m"><a href="ressources/images/DSC05464.png" data-lightbox="n" data-title="Remparts de Taroudant"><img src="ressources/images/DSC05464.png" alt="image-13"></a></div>
+         <!-- Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetièrePhotos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière Photos du cimetière -->
+            <div class="walk">
+                <h3>---Déambulations ---</h3>
+                <h3>★</h3>
+         <div class="container">
+                    <div class="box a"><a href="ressources/images/DSC05395.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05395.png" alt="image-1"></a></div>
+                    <div class="box b"><a href="ressources/images/DSC05396.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05396.png" alt="image-2"></a></div>
+                    <div class="box c"><a href="ressources/images/DSC05397.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05397.png" alt="image-3"></a></div>
+                    <div class="box d"><a href="ressources/images/DSC05399.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05399.png" alt="image-4"></a></div>
+                    <div class="box h"><a href="ressources/images/DSC05403.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05403.png" alt="image-8"></a></div>
+                    <div class="box i"><a href="ressources/images/DSC05404.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05404.png" alt="image-9"></a></div>
+                    <div class="box k"><a href="ressources/images/DSC05426.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05426.png" alt="image-11"></a></div>
+                    <div class="box l"><a href="ressources/images/DSC05427.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05427.png" alt="image-12"></a></div>
+                    <div class="box m"><a href="ressources/images/DSC05428.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05428.png" alt="image-13"></a></div>
+                    <div class="box n"><a href="ressources/images/DSC05433.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05433.png" alt="image-13"></a></div>
+                    <div class="box o"><a href="ressources/images/DSC05434.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05434.png" alt="image-13"></a></div>
+                    <div class="box p"><a href="ressources/images/DSC05435.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05435.png" alt="image-13"></a></div>
+                    <div class="box x"><a href="ressources/images/DSC05436.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05436.png" alt="image-13"></a></div>
+                    <div class="box r"><a href="ressources/images/DSC05443.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05443.png" alt="image-13"></a></div>
+                    <div class="box s"><a href="ressources/images/DSC05447.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05447.png" alt="image-13"></a></div>
+                    <div class="box t"><a href="ressources/images/DSC05451.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05451.png" alt="image-13"></a></div>
+                    <div class="box u"><a href="ressources/images/DSC05452.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05452.png" alt="image-13"></a></div>
+                    <div class="box v"><a href="ressources/images/DSC05456.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05456.png" alt="image-13"></a></div>
+                    <div class="box w"><a href="ressources/images/DSC05458.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05458.png" alt="image-13"></a></div>
+                    <div class="box x"><a href="ressources/images/DSC05459.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05459.png" alt="image-13"></a></div>
+                    <div class="box y"><a href="ressources/images/DSC05460.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05460.png" alt="image-13"></a></div>
+                    <div class="box e"><a href="ressources/images/DSC05400.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05400.png" alt="image-5"></a></div><div class="box z"><a href="ressources/images/DSC05463.png" data-lightbox="n" data-title=""><img src="ressources/images/DSC05463.png" alt="image-13"></a></div>
+                   
             </div>
+        </div>
                             <!-- photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres-->
+            <div class="famous">
+                <h3>---Les illustres personnages ---</h3>
+                <h3>★</h3>
+                <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                    <div class="carousel-cell"><img src="ressources/images/illustres/0.png"> </div>
+                    <div class="carousel-cell"><img src="ressources/images/illustres/brialy-15e.png"> </div>
+                    <div class="carousel-cell"><img src="ressources/images/illustres/DSC05444.png"> </div>
+                    <div class="carousel-cell"><img src="ressources/images/illustres/Gauthier.png"> </div>
+                    <div class="carousel-cell"><img src="ressources/images/illustres/IMG_20200116_120632.png"> </div>
+                    <div class="carousel-cell"><img src="ressources/images/illustres/IMG_20200116_122159.png"> </div>
+                    
+                  </div>
 
+
+
+
+
+            </div>
                             <!--formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contactformulaire de contactformulaire de contact  -->
                             <div class="form" id="form1">
 
                                 <svg width="282" height="342" viewBox="0 0 282 342" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="M_gris1">
+                                    <g id="mgris1">
                                         <g clip-path="url(#clip0)">
                                             <g id="version 3  NEGATIVE">
                                                 <g id="M">
@@ -198,7 +209,7 @@
                                     </div>
                                 </div>
                                 <svg width="282" height="342" viewBox="0 0 282 342" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="M_gris2">
+                                    <g id="mgris2">
                                         <g clip-path="url(#clip0)">
                                             <g id="version 3  NEGATIVE">
                                                 <g id="M">
@@ -245,7 +256,7 @@
 
                             </div>
                             <!-- plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires plan et horaires  plan et horaires  plan et horaires plan et horaires  -->
-                            <div class="boxlieuethoraires" id="map">
+                            <div class="baxlieuethoraires" id="map">
                                 <div class="mapetheures">
 
                                     <div class="adresseethoraires">
@@ -276,6 +287,7 @@
     </div>
     
     <script src="ressources/codes/lightbox-plus-jquery.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
 </body>
 
 </html>
