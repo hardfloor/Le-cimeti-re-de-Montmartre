@@ -459,24 +459,7 @@ width: 100VW;
   
 }
 
-#mgris1 {
-    animation: m3 6s ease infinite;
-}
 
-@keyframes m3 {
-    from {
-        transform: translateX(100%);
-        opacity: 0.8;
-    }
-
-
-    to {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-  
-}
 
 .form svg {
     width: auto;
