@@ -1,5 +1,5 @@
 /* home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home */
-/* page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil  page d'accueilpage d'accueil*/
+
 
 
 * {
@@ -13,11 +13,77 @@ body {
     background-color: black;
     max-width: 100vh;
     height: 600vh;
-    display: flex;
-    flex-direction: column;
+}
+
+/* hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebarhidden sidebar hidden sidebar hidden sidebar*/ 
+.six_feet_under{
+    position: fixed;
+    z-index: 6;
 
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    font-family: 'Meie Script', cursive;  
+    padding: 8px 8px 8px 32px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a.closebtn{
+    font-family: Arial, Helvetica, sans-serif 
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-family: 'Meie Script', cursive; 
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+
+/* page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil  page d'accueilpage d'accueil*/
 h1,
 h2,
 h3 {
@@ -257,7 +323,7 @@ width: 100VW;
 
 .container .box {
     position: relative;
-    border-radius: 0px;
+    border-radius: 5px;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -265,7 +331,7 @@ width: 100VW;
 }
 
 
-.container .box.a,.d,.p,.y {
+.container .box.a,.d,.p,.y,.z {
     grid-column: span 2;
 }
 
@@ -290,21 +356,10 @@ width: 100VW;
 }
 
 
-/* photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres photo des personnages celebres*/
-.famous{
-    width: auto;
-    height: auto;
-}
 
-.famous h3{
-    color: gray;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 5em;
-    margin-top: 100px;
     
-}
+   
+
 
 
 /*formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contactformulaire de contactformulaire de contact  */
@@ -312,7 +367,7 @@ width: 100VW;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     background-color: #383d44
 }
@@ -621,7 +676,8 @@ footer img{
 
 @media screen and (max-width:414px) {
 
-
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
   
     .logohome {
         justify-content: center;
@@ -722,6 +778,25 @@ footer img{
         font-size: 15px;
     }*/
     
+    .walk h3{
+         font-size: 2em;
+    }
+
+    .famous h3{
+      
+        font-size: 1.5em;
+       
+    }
+
+    .main-carousel{
+        height: 70vh;
+        margin-bottom: 50px;
+    }
+    .carousel-cell img{
+        height: 60vh;
+    }
+
+
     svg{
         display: none;
     }

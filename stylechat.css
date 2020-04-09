@@ -85,6 +85,13 @@ p {
     align-items: center;
     padding: 20px;
 }
+
+.picto iframe{
+width: 20%;
+height: auto;
+border-radius: 10px;
+margin-bottom: 10px;
+}
 i{
     font-size: 50px;
     color:black;
