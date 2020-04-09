@@ -254,10 +254,11 @@ width: 100VW;
 }
 
 .history p {
+    
     font-size: 1.1em;
     margin: 20px;
-    text-align: justify
-    ;
+    text-align: justify;
+    margin-top: 40px;
 
 }
 
@@ -446,8 +447,7 @@ width: 100VW;
 @keyframes m1 {
     from {
         transform: translateX(-100%);
-        opacity: 0.8
-        ;
+        opacity: 0.8;
     }
 
 
@@ -456,9 +456,27 @@ width: 100VW;
         opacity: 0;
     }
 
+  
 }
 
+#mgris1 {
+    animation: m3 6s ease infinite;
+}
 
+@keyframes m3 {
+    from {
+        transform: translateX(100%);
+        opacity: 0.8;
+    }
+
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+  
+}
 
 .form svg {
     width: auto;
