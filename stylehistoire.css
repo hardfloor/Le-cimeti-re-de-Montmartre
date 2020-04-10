@@ -23,12 +23,12 @@ p{
     width: auto;
     height: auto;
     background-color: #e8edf6;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 30px;
     padding: 50px;
-    box-shadow: 
+   /* box-shadow: 
     10px 10px 16px 0 #00000c inset,
-    -10px -10px 16px 0 #00000c inset;
+    -10px -10px 16px 0 #00000c inset;*/
 }
 
 .entete{
@@ -73,9 +73,9 @@ i{
 
         margin: 15px;
         padding: 10px;
-        box-shadow: 
+        /*box-shadow: 
         10px 10px 16px 0 #00000c inset,
-        -10px -10px 16px 0 #00000c inset;
+        -10px -10px 16px 0 #00000c inset;*/
     }
     
 
