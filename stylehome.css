@@ -147,7 +147,7 @@ a {
     margin-top: 20px;
 }
 
-.picto i{
+.picto i {
     color: white;
     font-size: 3em;
 }
@@ -197,7 +197,7 @@ a {
 
 .double_expo {
     min-height: 100vh;
-    width: 90vw;
+    width: 100vw;
 
 
 }
@@ -225,10 +225,10 @@ a {
 .history {
     position: absolute;
     left: 10%;
-    top: 110%;
-    width: 30%;
-    height: 60%;
-    background: white;
+    top: 105%;
+    width: 40%;
+    height: 70%;
+    background-color: black;
     border-radius: 10px;
     /*box-shadow: 0 0 30px white;*/
     z-index: 3;
@@ -242,16 +242,18 @@ a {
 
 .history h2 {
 
-    font-size: 2.2em;
+    font-size: 3em;
     text-align: center;
+    color: white;
 }
 
 .history p {
 
-    font-size: 1.1em;
+    font-size: 2em;
     margin: 20px;
     text-align: justify;
     margin-top: 40px;
+    color: white;
 
 }
 
@@ -264,25 +266,22 @@ a {
 
 .cat,
 .more_story {
-    width: 170px;
+    width: 200px;
     height: 50px;
     text-decoration: none;
     color: #00000c;
-    background: grey;
+    background:white;
     border-radius: 10px;
     margin-top: 10px;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow:
-        8px 8px 8px 0 rgba(255, 255, 255, 0.3) inset,
-        -8px -8px 8px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
 .history h3 {
 
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 
@@ -370,16 +369,20 @@ a {
 
 /*formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contact formulaire de contactformulaire de contactformulaire de contact  */
 .form {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     align-items: center;
     background-color: #383d44
 }
 
 
 .contact {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
     width: 500px;
     height: 600px;
     background: white;
@@ -432,25 +435,13 @@ a {
     height: 90vh;
 }
 
-/*.contact{
-     animation:ct1 3s ease ;
- }
- @keyframes ct1{
-    from{
-        transform: translateZ(-200%);
-    }
-    to{
-       transform: translateZ(0%); 
-    }
-}*/
-
 #mgris1 {
     animation: m1 6s ease infinite;
 }
 
 @keyframes m1 {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-150%);
         opacity: 0.8;
     }
 
@@ -476,7 +467,7 @@ a {
 
 @keyframes m2 {
     from {
-        transform: translateX(100%);
+        transform: translateX(150%);
         opacity: 0.8;
     }
 
@@ -548,7 +539,7 @@ footer a {
     font-size: 2em;
 }
 
-footer i{
+footer i {
     color: white;
     font-size: 2em;
     margin-left: 20px;
