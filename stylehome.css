@@ -97,15 +97,6 @@ a {
 
 }
 
-.angel {
-    display: none;
-    position: fixed;
-    right: 2%;
-    top: 4%;
-    z-index: 2;
-    opacity: 0.8;
-
-}
 
 .maincontainer {
     width: 100vw;
@@ -156,16 +147,16 @@ a {
     margin-top: 20px;
 }
 
+.picto i{
+    color: white;
+    font-size: 3em;
+}
+
 .picto {
 
     width: 300px;
     display: flex;
     justify-content: space-around;
-}
-
-.picto img {
-    width: auto;
-    height: 6vh;
 }
 
 .scrolldown svg {
@@ -557,9 +548,12 @@ footer a {
     font-size: 2em;
 }
 
-footer img {
-    width: 30px;
-    margin-left: 30px;
+footer i{
+    color: white;
+    font-size: 2em;
+    margin-left: 20px;
+}
+
 }
 
 /*mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueriesmediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries */
