@@ -16,6 +16,19 @@ body {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Meie Script', cursive;
+}
+
+p,
+a {
+    font-family: 'Farsan', cursive;
+
+}
+
+
 /* hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebar hidden sidebarhidden sidebar hidden sidebar hidden sidebar*/
 .six_feet_under {
     position: fixed;
@@ -85,17 +98,6 @@ body {
 
 
 /* page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil page d'accueil  page d'accueilpage d'accueil*/
-h1,
-h2,
-h3 {
-    font-family: 'Meie Script', cursive;
-}
-
-p,
-a {
-    font-family: 'Farsan', cursive;
-
-}
 
 
 .maincontainer {
@@ -140,7 +142,7 @@ a {
 }
 
 .pictologo {
-    width: 100VW;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,7 +150,7 @@ a {
 }
 
 .picto i {
-    font-display: swap;
+
     color: white;
     font-size: 3em;
 }
@@ -231,7 +233,6 @@ a {
     height: 70%;
     background-color: black;
     border-radius: 10px;
-    /*box-shadow: 0 0 30px white;*/
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -271,17 +272,15 @@ a {
     height: 50px;
     text-decoration: none;
     color: #00000c;
-    background:white;
+    background: white;
     border-radius: 10px;
     margin-top: 10px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .history h3 {
-
     font-size: 1.5em;
 }
 
@@ -293,7 +292,8 @@ a {
 
 
 
-.walk h3 {
+.walk h3,
+h4 {
     color: gray;
     display: flex;
     align-items: center;
@@ -455,8 +455,6 @@ a {
 
 }
 
-
-
 .form svg {
     width: auto;
     height: 90vh;
@@ -487,6 +485,7 @@ a {
 .main_place_and_hours {
     display: flex;
     flex-direction: column;
+
 }
 
 .map_and_hours {
@@ -546,7 +545,6 @@ footer i {
     margin-left: 20px;
 }
 
-}
 
 /*mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueriesmediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries */
 
@@ -554,90 +552,31 @@ footer i {
 
 
     .pano {
-        height: 68vh;
+        height: 60vh;
+        margin: 10px 0;
+        ;
     }
 
-    .pano img {
-        max-width: 100%;
-    }
-
-
-    .history {
-        position: absolute;
-        left: 10%;
-        top: 110%;
-        width: 40%;
-        height: 60%;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 0 30px white;
-        z-index: 3;
-        display: flex;
-        flex-direction: column
-    }
-
-
-    .history h2 {
-
-        font-size: 2.2em;
-        text-align: center;
-    }
 
     .history p {
-        font-size: 15px;
+        font-size: 1.3em;
         margin: 20px 20px 50px 20px;
-
-
-
     }
 
     .stoty_button {
         display: flex;
         justify-content: space-around;
-
     }
 
-    .cat,
-    .more_story {
-        width: 120px;
-        height: 50px;
-        text-decoration: none;
-        color: #00000c;
-        background: grey;
-        border-radius: 10px;
-        margin-top: 0px;
 
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        box-shadow:
-            12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
-            -8px -8px 8px 0 #383d44 inset;
-    }
 
     .history h3 {
-
         font-size: 15px;
     }
 
-    .adresseethoraires {
-        display: flex;
-        flex-direction: column;
-        background-color: #d0d5de;
-        padding: 30px;
-        width: 400px;
-        height: 500px;
-        border-radius: 10px;
-
+    .walk h3 {
+        margin-top: 50px;
     }
-
-    iframe {
-        border-radius: 10px;
-        width: 400px;
-        height: 500px;
-    }
-
-
 }
 
 @media screen and (max-width:1024px) {
@@ -649,269 +588,233 @@ footer i {
     }
 
     .pano {
-        height: 65vh;
+        height: 50vh;
+        margin: 35px 0;
     }
 
     .history {
-
         height: 60%;
-
-    }
-
-    .history p {
-        font-size: 15px;
-        margin: 20px 20px 40px 20px;
-
-    }
-}
-
-.container {
-    height: auto;
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 100px;
-    grid-gap: 5px;
-    margin: 20px;
-    margin-top: 150px;
-
-}
-
-@media screen and (max-width:414px) {
-
-    .sidebar {
-        padding-top: 15px;
-    }
-
-    .sidebar a {
-        font-size: 18px;
-    }
-
-    .logohome {
-        justify-content: center;
-    }
-
-    .logohome img {
-        width: 70%;
-        margin: 10px 0 10px 10PX;
-    }
-
-    .angel img {
-        width: auto;
-        height: 50px;
-    }
-
-    .angel {
-        top: 3%;
-        right: 5%;
-    }
-
-    .pano {
-        display: none;
-    }
-
-    .picmobil {
-        display: block;
-        width: 100%;
-    }
-
-    .picmobil img {
-        width: 95%;
-        max-height: 600PX;
-    }
-
-    .picto img {
-        width: auto;
-        height: 3vh;
-    }
-
-    .scrolldown svg {
-        width: auto;
-        height: 3vh;
-    }
-
-    .logo img {
-        width: auto;
-        height: 3vh;
-    }
-
-    .double_expo {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-
-    }
-
-    .double_expo img {
-        display: none;
-    }
-
-    .double_expo video {
-        display: none
-    }
-
-    .history {
-
-        position: absolute;
-        left: 10%;
-        top: 120%;
-        width: 85%;
-        height: 60%;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 0 30px white;
-        z-index: 0;
-
-
-    }
-
-    .history h2 {
-        font-size: 1.5em;
-    }
-
-    .history p {
-        font-size: 12px;
-        margin: 20px 20px 60px 20px;
-
-
-    }
-
-    .cat,
-    .more_story {
-        width: 120px;
-    }
-
-    /*.history h3 {
-        font-size: 15px;
-    }*/
-
-    .walk h3 {
-        font-size: 2em;
-    }
-
-    .famous h3 {
-
-        font-size: 1.5em;
-
-    }
-
-    .main-carousel {
-        height: 70vh;
-        margin-bottom: 50px;
-    }
-
-    .carousel-cell img {
-        height: 60vh;
-    }
-
-
-    svg {
-        display: none;
-    }
-
-    #M_gris1 {
-        display: none;
-    }
-
-    #M_gris2 {
-        display: none;
-    }
-
-
-
-    .contact {
-        width: 90vw;
-        height: 600px;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        border-radius: 10px;
-        opacity: 0.9;
-        z-index: 1;
-        padding: 10px;
-        margin: 20px;
-    }
-
-    .container {
-        height: auto;
-        display: grid;
-        grid-auto-flow: dense;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 100px 100px 100px 100px;
-        grid-gap: 5px;
-        margin: 20px;
-
-    }
-
-
-    .box1 {
-        width: 300px;
-    }
-
-    .boxlieuethoraires {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mapetheures {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         margin-top: 50px;
     }
 
-    .adresseethoraires {
-        width: 380px;
-        height: auto;
-        margin: 0 0 0 10px;
-
-    }
-
-    .adresseethoraires h3 {
-
-        font-size: 3.5em;
-        text-align: center;
-        margin-bottom: 20px;
-
-    }
-
-    .adresseethoraires p {
+    .history h2 {
         font-size: 2em;
-        text-align: center;
     }
 
-    iframe {
-        margin-top: 20px;
-        margin-left: 10px;
-        border-radius: 10px;
-        width: 380px;
-        height: 300px;
+    .history p {
+        font-size: 1.1em;
+        margin: 20px 20px 40px 20px;
+    }
+
+    .adress {
+        width: 450px;
+    }
+
+    @media screen and (max-width:414px) {
+
+        .sidebar {
+            padding-top: 15px;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+
+        .logohome {
+            justify-content: center;
+        }
+
+        .logohome img {
+            width: 70%;
+            margin: 10px 0 10px 10PX;
+        }
+
+        .pano {
+            display: none;
+        }
+
+        .picmobil {
+            display: block;
+            width: 100%;
+        }
+
+        .picmobil img {
+            width: 95%;
+            max-height: 600PX;
+        }
+
+        .picto i {
+
+            color: white;
+            font-size: 1.5em;
+        }
+
+
+
+        .scrolldown svg {
+            width: 80px;
+            height: 5vh;
+        }
+
+        .logo img {
+            height: 2.5vh;
+        }
+
+        .double_expo {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .double_expo img {
+            display: none;
+        }
+
+        .double_expo video {
+            display: none
+        }
+
+        .history {
+            width: 85%;
+            height: 60%;
+            margin-top: 100px;
+        }
+
+        .history h2 {
+            font-size: 1.5em;
+        }
+
+        .history p {
+            font-size: px1.5EM;
+            margin: 20px 20px 60px 20px;
+
+
+        }
+
+        .cat,
+        .more_story {
+            width: 120px;
+        }
+
+
+
+        .walk h3 {
+            font-size: 2em;
+        }
+
+        .walk h4 {
+            font-size: 1.5em;
+        }
+
+        .container {
+            height: auto;
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-gap: 5px;
+            margin: 20px;
+        }
+
+        .form {
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #383d44
+        }
+
+
+        .contact {
+            width: 340px;
+            height: 600px;
+        }
+
+        .contact h3 {
+
+            font-size: 2em;
+            margin: 20px 0 20px;
+            padding-left: 20px;
+            color: #00000c;
+
+        }
+
+        .contact p {
+
+            font-size: 1em;
+            margin: 0 0 30px 20px;
+        }
+
+        .contact input {
+
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .contact textarea {
+            height: 100px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .contact div {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        .map_and_hours {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .adress {
+            padding: 10px;
+            width: 330px;
+        }
+
+        .adress h3 {
+            font-size: 3em;
+        }
+
+
+        iframe {
+            margin-top: 20px;
+            width: 330px;
+        }
+
+        footer a {
+            color: white;
+            font-size: 1em;
+        }
 
     }
 
-    footer a {
-        color: white;
-        font-size: 1em;
-    }
+    @media screen and (max-width:393px) {
 
-}
-
-@media screen and (max-width:393px) {
-
-    .history {
-
-        position: absolute;
-        left: 10%;
-        top: 125%;
+        .history {
         width: 85%;
         height: 70%;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 0 30px white;
-        z-index: 0;
+    }
+
+    .walk h3 {
+
+        margin-top: 150px;
 
     }
 
+    .walk h4 {
+        font-size: 1.5em;
+    }
+
+    .form svg {
+        height: 100vh;
+    }
 }
