@@ -609,197 +609,198 @@ footer i {
     .adress {
         width: 450px;
     }
+}
 
-    @media screen and (max-width:414px) {
+@media screen and (max-width:414px) {
 
-        .sidebar {
-            padding-top: 15px;
-        }
+    .sidebar {
+        padding-top: 15px;
+    }
 
-        .sidebar a {
-            font-size: 18px;
-        }
+    .sidebar a {
+        font-size: 18px;
+    }
 
-        .logohome {
-            justify-content: center;
-        }
+    .logohome {
+        justify-content: center;
+    }
 
-        .logohome img {
-            width: 70%;
-            margin: 10px 0 10px 10PX;
-        }
+    .logohome img {
+        width: 70%;
+        margin: 10px 0 10px 10PX;
+    }
 
-        .pano {
-            display: none;
-        }
+    .pano {
+        display: none;
+    }
 
-        .picmobil {
-            display: block;
-            width: 100%;
-        }
+    .picmobil {
+        display: block;
+        width: 100%;
+    }
 
-        .picmobil img {
-            width: 95%;
-            max-height: 600PX;
-        }
+    .picmobil img {
+        width: 95%;
+        max-height: 600PX;
+    }
 
-        .picto i {
+    .picto i {
 
-            color: white;
-            font-size: 1.5em;
-        }
-
-
-
-        .scrolldown svg {
-            width: 80px;
-            height: 5vh;
-        }
-
-        .logo img {
-            height: 2.5vh;
-        }
-
-        .double_expo {
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-
-        }
-
-        .double_expo img {
-            display: none;
-        }
-
-        .double_expo video {
-            display: none
-        }
-
-        .history {
-            width: 85%;
-            height: 60%;
-            margin-top: 100px;
-        }
-
-        .history h2 {
-            font-size: 1.5em;
-        }
-
-        .history p {
-            font-size: px1.5EM;
-            margin: 20px 20px 60px 20px;
-
-
-        }
-
-        .cat,
-        .more_story {
-            width: 120px;
-        }
+        color: white;
+        font-size: 1.5em;
+    }
 
 
 
-        .walk h3 {
-            font-size: 2em;
-        }
+    .scrolldown svg {
+        width: 80px;
+        height: 5vh;
+    }
 
-        .walk h4 {
-            font-size: 1.5em;
-        }
+    .logo img {
+        height: 2.5vh;
+    }
 
-        .container {
-            height: auto;
-            display: grid;
-            grid-auto-flow: dense;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 100px 100px 100px 100px 100px;
-            grid-gap: 5px;
-            margin: 20px;
-        }
-
-        .form {
-
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #383d44
-        }
-
-
-        .contact {
-            width: 340px;
-            height: 600px;
-        }
-
-        .contact h3 {
-
-            font-size: 2em;
-            margin: 20px 0 20px;
-            padding-left: 20px;
-            color: #00000c;
-
-        }
-
-        .contact p {
-
-            font-size: 1em;
-            margin: 0 0 30px 20px;
-        }
-
-        .contact input {
-
-            padding: 10px;
-            margin-bottom: 30px;
-            border-radius: 5px;
-        }
-
-        .contact textarea {
-            height: 100px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        .contact div {
-            width: 95%;
-            display: flex;
-            flex-direction: column;
-            padding-left: 20px;
-        }
-
-        .map_and_hours {
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .adress {
-            padding: 10px;
-            width: 330px;
-        }
-
-        .adress h3 {
-            font-size: 3em;
-        }
-
-
-        iframe {
-            margin-top: 20px;
-            width: 330px;
-        }
-
-        footer a {
-            color: white;
-            font-size: 1em;
-        }
+    .double_expo {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
 
     }
 
-    @media screen and (max-width:393px) {
+    .double_expo img {
+        display: none;
+    }
 
-        .history {
+    .double_expo video {
+        display: none
+    }
+
+    .history {
+        width: 85%;
+        height: 60%;
+        margin-top: 100px;
+    }
+
+    .history h2 {
+        font-size: 1.5em;
+    }
+
+    .history p {
+        font-size: px1.5EM;
+        margin: 20px 20px 60px 20px;
+
+
+    }
+
+    .cat,
+    .more_story {
+        width: 120px;
+    }
+
+
+
+    .walk h3 {
+        font-size: 2em;
+    }
+
+    .walk h4 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        height: auto;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-gap: 5px;
+        margin: 20px;
+    }
+
+    .form {
+
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #383d44
+    }
+
+
+    .contact {
+        width: 340px;
+        height: 600px;
+    }
+
+    .contact h3 {
+
+        font-size: 2em;
+        margin: 20px 0 20px;
+        padding-left: 20px;
+        color: #00000c;
+
+    }
+
+    .contact p {
+
+        font-size: 1em;
+        margin: 0 0 30px 20px;
+    }
+
+    .contact input {
+
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .contact textarea {
+        height: 100px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .contact div {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .map_and_hours {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .adress {
+        padding: 10px;
+        width: 330px;
+    }
+
+    .adress h3 {
+        font-size: 3em;
+    }
+
+
+    iframe {
+        margin-top: 20px;
+        width: 330px;
+    }
+
+    footer a {
+        color: white;
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:393px) {
+
+    .history {
         width: 85%;
         height: 70%;
     }
@@ -815,6 +816,7 @@ footer i {
     }
 
     .form svg {
+        
         height: 100vh;
     }
 }
