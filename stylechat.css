@@ -52,15 +52,6 @@ svg {
     background-color:#e8edf6;
     border-radius: 5px;
     margin-right: 30px;
-    /*box-shadow: 
-      10px 10px 16px 0 #00000c inset,
-      -10px -10px 16px 0 #00000c inset;*/
-}
-
-img {
-    width: 50px;
-    height: auto;
-    margin: 20px;
 }
 
 h3 {
@@ -86,12 +77,14 @@ p {
     padding: 20px;
 }
 
+
 .picto iframe{
 width: 20%;
 height: auto;
 border-radius:5px;
 margin-bottom: 10px;
 }
+
 i{
     font-size: 50px;
     color:black;
@@ -106,15 +99,17 @@ i{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: auto;
-        height: autovh;
+        width: 90%;
+        height: auto;
         background-color:#e8edf6;
-        border-radius: 10px;
-        margin-right: 30px;
-        box-shadow: 
-          10px 10px 16px 0 #00000c inset,
-          -10px -10px 16px 0 #00000c inset;
+        border-radius: 5px;
+          
     }
+    .picto iframe{
+        width: 50%;
+    }
+
+
 
     h3 {
         
@@ -129,7 +124,10 @@ i{
 
 @media screen and (max-width:414px){
 
-
+section{
+    display: flex;
+    justify-content: center;
+}
 svg{
     display: none;
 }
@@ -138,10 +136,8 @@ svg{
     margin: 0;
 }
 
-img {
-    width: 50px;
-    height: auto;
-    margin: 20px;
+.picto iframe{
+    width: 50%;
 }
 
 h3 {
