@@ -104,6 +104,7 @@ a {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    
 }
 
 .mainhome {
@@ -111,6 +112,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 .logohome {
