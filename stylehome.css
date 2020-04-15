@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
 }
 
@@ -14,6 +15,8 @@ body {
     max-width: 100vh;
     height: 600vh;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    
 }
 
 h1,
@@ -104,7 +107,6 @@ a {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    
 }
 
 .mainhome {
@@ -112,7 +114,6 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
 }
 
 .logohome {
@@ -131,7 +132,6 @@ a {
     height: 65vh;
     display: flex;
     align-items: center;
-
 }
 
 .pano img {
@@ -149,6 +149,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    
 }
 
 .picto i {
@@ -203,7 +204,7 @@ a {
 .double_expo {
     min-height: 100vh;
     width: 100vw;
-
+    
 
 }
 
@@ -216,6 +217,7 @@ a {
     object-fit: cover;
     z-index: 1;
     mix-blend-mode: darken;
+    
 }
 
 .double_expo video {
@@ -225,6 +227,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
 }
 
 .history {
@@ -303,6 +306,9 @@ h4 {
     font-size: 5em;
     margin-top: 20px;
 
+}
+.walk h3{
+    margin-top: 100px;
 }
 
 
@@ -529,14 +535,14 @@ iframe {
 
 footer {
     display: flex;
-
+justify-content: center;
     align-items: center;
     padding-left: 80px;
     padding-top: 70px;
 
 }
-
-footer a {
+ 
+footer a,p {
     color: white;
     font-size: 2em;
 }
@@ -608,6 +614,13 @@ footer i {
         margin: 20px 20px 40px 20px;
     }
 
+    .cat,
+    .more_story {
+    width: 150px;
+    }
+    .walk h3 {
+        margin-top: 150px;
+    }
     .adress {
         width: 450px;
     }
@@ -705,6 +718,7 @@ footer i {
 
     .walk h3 {
         font-size: 2em;
+       
     }
 
     .walk h4 {
@@ -809,7 +823,7 @@ footer i {
 
     .walk h3 {
 
-        margin-top: 150px;
+        margin-top: 190px;
 
     }
 
