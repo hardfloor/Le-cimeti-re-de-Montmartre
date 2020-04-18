@@ -18,9 +18,11 @@ p{
 
 
 section {
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 
 }
 
@@ -30,7 +32,18 @@ svg {
 }
 
 #yeux {
-    animation: yeux 2s ease infinite alternate;
+    -webkit-animation: yeux 2s ease infinite alternate;
+            animation: yeux 2s ease infinite alternate;
+}
+
+@-webkit-keyframes yeux {
+    from {
+        fill: #EFC90C;
+    }
+
+    to {
+        fill: rgb(143, 10, 10);
+    }
 }
 
 @keyframes yeux {
@@ -44,9 +57,13 @@ svg {
 }
 
 .box {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     width: auto;
     height: auto;
     background-color:#e8edf6;
@@ -71,9 +88,11 @@ p {
 }
 .picto{
     width: 100%;
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 20px;
 }
 
@@ -96,9 +115,13 @@ i{
 
 @media screen and (max-width:1024px){
     .box {
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
         width: 90%;
         height: auto;
         background-color:#e8edf6;
@@ -125,8 +148,10 @@ i{
 @media screen and (max-width:414px){
 
 section{
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 svg{
     display: none;
