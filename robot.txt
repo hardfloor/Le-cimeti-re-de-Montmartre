@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /mentions.html
 Disallow: /chat.html
 Disallow: /histoire.html
-Sitemap: https://cimetiere-de-montmartre.netlify.app/sitemap.xml
+Sitemap:
