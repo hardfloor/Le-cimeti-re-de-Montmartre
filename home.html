@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> <!-- carrousel-->
     <link href="ressources/codes/lightbox.css" rel="stylesheet" />
     <!--Lightboox-->
-    <script src="https://www.google.com/recaptcha/api.js"></script><!--Captcha js-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--Captcha js-->
 </head>
 
 <body>
@@ -275,10 +276,8 @@
                         <textarea id="question" name="pres"
                             title="saisissez vos questions ou commentaires"> Vos questions ou commentaires</textarea>
 
-                            <button class="g-recaptcha" 
-                            data-sitekey="6LfS-_sUAAAAAP_dE-TA3BSaD2INrw3ltbsdbSOl" 
-                            data-callback='onSubmit' 
-                            data-action='submit'>Envoyer</button>
+                        <button class="g-recaptcha" data-sitekey="6LfS-_sUAAAAAP_dE-TA3BSaD2INrw3ltbsdbSOl"
+                            data-callback='onSubmit' data-action='submit'>Envoyer</button>
                     </div>
                 </div>
 
@@ -387,12 +386,13 @@
 <script src="ressources/codes/lightbox-plus-jquery.min.js" defer></script>
 <!--script carrousel-->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer>
-    </script>
-     
-     <script>
-        function onSubmit(token) {
-          document.getElementById("demo-form").submit();
-        }
-      </script><!--amorce captcha-->
+</script>
 
-    </html>
+<!--<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+</script>-->
+<!--amorce captcha-->
+
+</html>
