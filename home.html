@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> <!-- carrousel-->
     <link href="ressources/codes/lightbox.css" rel="stylesheet" />
     <!--Lightboox-->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfS-_sUAAAAAP_dE-TA3BSaD2INrw3ltbsdbSOl"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdmBPwUAAAAAPMZPyc2gQap2Y8YTzP21nrYshJl"></script>
     <!--Captcha js-->
 </head>
 
@@ -276,7 +276,7 @@
                         <textarea id="question" name="pres"
                             title="saisissez vos questions ou commentaires"> Vos questions ou commentaires</textarea>
 
-                        <button class="g-recaptcha" data-sitekey="6LfS-_sUAAAAAP_dE-TA3BSaD2INrw3ltbsdbSOl"
+                        <button class="g-recaptcha" data-sitekey="6LdmBPwUAAAAAPMZPyc2gQap2Y8YTzP21nrYshJl"
                             data-callback='onSubmit' data-action='submit'>Envoyer</button>
                     </div>
                 </div>
@@ -392,7 +392,7 @@
     function onClick(e) {
       e.preventDefault();
       grecaptcha.ready(function() {
-        grecaptcha.execute('6LfS-_sUAAAAAP_dE-TA3BSaD2INrw3ltbsdbSOl', {action: 'submit'}).then(function(token) {
+        grecaptcha.execute('6LdmBPwUAAAAAPMZPyc2gQap2Y8YTzP21nrYshJl', {action: 'submit'}).then(function(token) {
             // Add your logic to submit to your backend server here.
         });
       });
