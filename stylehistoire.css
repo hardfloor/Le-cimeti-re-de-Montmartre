@@ -59,11 +59,20 @@ p {
     margin-left: 30px;
 }
 
+
+.infographie img{
+max-width: 100%;
+height: auto;
+
+} 
 i{
     font-size: 50px;
     color:#00000c;
 }
 
+.picto{
+    margin-top: 50px;
+}
 /*mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries*/
 
 @media screen and (max-width:1024px){
